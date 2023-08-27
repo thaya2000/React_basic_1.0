@@ -1,5 +1,8 @@
 import "./ExpenseDate.css";
 
+// This is a component that will be used in ExpenseItem.js
+// It will be used to display the date of the expense
+
 function ExpenseDate(props) {
   const month = props.date.toLocaleString("en-US", { month: "long" });
   const day = props.date.toLocaleString("en-US", { day: "2-digit" });
